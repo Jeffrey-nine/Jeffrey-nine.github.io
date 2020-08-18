@@ -19,7 +19,7 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Pisces","version":"8.0.0-rc.5","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"8.0.0-rc.5","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false};
   </script>
 
   <meta name="description" content="第二章作业1.列举你了解的编码及他们之间的区别？ ASCII: python2默认的编码，一个字母是8位 Unicode(万国码)：一个字母是32位 UTF-8：万国码的压缩码，最少用一个字节，ascii码中的内容用1个字节保存、欧洲的字符用2个字节保存，东亚的字符用3个字节保存  2.列举你了解的Python2和Python3的区别？ python2默认的编码是ACSII，python3默认的">
@@ -134,17 +134,17 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="tags fa-fw"></i>标签</a>
+    <a href="/tags/" rel="section"><i class="tags fa-fw"></i>标签<span class="badge">0</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="th fa-fw"></i>分类</a>
+    <a href="/categories/" rel="section"><i class="th fa-fw"></i>分类<span class="badge">1</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="archive fa-fw"></i>归档</a>
+    <a href="/archives/" rel="section"><i class="archive fa-fw"></i>归档<span class="badge">2</span></a>
 
   </li>
   </ul>
@@ -192,7 +192,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -305,7 +305,7 @@
 </ul>
 <h5 id="2-列举你了解的Python2和Python3的区别？"><a href="#2-列举你了解的Python2和Python3的区别？" class="headerlink" title="2.列举你了解的Python2和Python3的区别？"></a>2.列举你了解的Python2和Python3的区别？</h5><ul>
 <li>python2默认的编码是ACSII，python3默认的编码是UTF-8</li>
-<li>print不一样<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; print(&quot;hello&quot;, &quot;world&quot;)</span><br><span class="line">(&#39;hello&#39;, &#39;world&#39;)</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; print(&quot;hello&quot;, &quot;world&quot;)</span><br><span class="line">hello world</span><br></pre></td></tr></table></figure>
+<li>print不一样<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt; print(<span class="string">&quot;hello&quot;</span>, <span class="string">&quot;world&quot;</span>)</span><br><span class="line">(<span class="string">&#x27;hello&#x27;</span>, <span class="string">&#x27;world&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt; print(<span class="string">&quot;hello&quot;</span>, <span class="string">&quot;world&quot;</span>)</span><br><span class="line">hello world</span><br></pre></td></tr></table></figure>
 <h5 id="3-你了解的python都有那些数据类型？"><a href="#3-你了解的python都有那些数据类型？" class="headerlink" title="3.你了解的python都有那些数据类型？"></a>3.你了解的python都有那些数据类型？</h5></li>
 <li>整型</li>
 <li>字符串</li>
@@ -335,9 +335,9 @@
 
 <h5 id="3-使用两种方法实现输出-1-2-3-4-5-6-8-9-10"><a href="#3-使用两种方法实现输出-1-2-3-4-5-6-8-9-10" class="headerlink" title="3.使用两种方法实现输出 1 2 3 4 5 6 8 9 10"></a>3.使用两种方法实现输出 1 2 3 4 5 6 8 9 10</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">num = <span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> num &lt; <span class="number">10</span>:</span><br><span class="line">    num = num + <span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> num == <span class="number">7</span>:</span><br><span class="line">        <span class="keyword">continue</span></span><br><span class="line">    print(num)</span><br></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">num = <span class="number">1</span></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    <span class="keyword">if</span> num == <span class="number">10</span>:</span><br><span class="line">       print(num)</span><br><span class="line">       <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">if</span> num == <span class="number">7</span>:</span><br><span class="line">       num = num + <span class="number">1</span></span><br><span class="line">       <span class="keyword">continue</span></span><br><span class="line">    print(num)</span><br><span class="line">    num = num + <span class="number">1</span></span><br></pre></td></tr></table></figure>
-<h5 id="4-求1-100的所有数的和"><a href="#4-求1-100的所有数的和" class="headerlink" title="4.求1-100的所有数的和"></a>4.求1-100的所有数的和</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">num = <span class="number">1</span></span><br><span class="line">sum = <span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> num &lt;= <span class="number">100</span>:</span><br><span class="line">    sum = sum + num</span><br><span class="line">    num = num + <span class="number">1</span></span><br><span class="line">print(sum)</span><br><span class="line">````</span><br><span class="line"></span><br><span class="line"><span class="comment">##### 5.输出 1-100 内的所有奇数</span></span><br><span class="line">```python</span><br><span class="line">num=<span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> num&lt;<span class="number">100</span>:</span><br><span class="line">    num = num + <span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> num % <span class="number">2</span>==<span class="number">0</span>:</span><br><span class="line">        <span class="keyword">continue</span></span><br><span class="line">    print(num)</span><br></pre></td></tr></table></figure>
+<h5 id="4-求1-100的所有数的和"><a href="#4-求1-100的所有数的和" class="headerlink" title="4.求1-100的所有数的和"></a>4.求1-100的所有数的和</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">num = <span class="number">1</span></span><br><span class="line">sum = <span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> num &lt;= <span class="number">100</span>:</span><br><span class="line">truesum = sum + num</span><br><span class="line">truenum = num + <span class="number">1</span></span><br><span class="line">print(sum)</span><br><span class="line">````</span><br><span class="line"></span><br><span class="line"><span class="comment">##### 5.输出 1-100 内的所有奇数</span></span><br><span class="line">```python</span><br><span class="line">num=<span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> num&lt;<span class="number">100</span>:</span><br><span class="line">    num = num + <span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> num % <span class="number">2</span>==<span class="number">0</span>:</span><br><span class="line">        <span class="keyword">continue</span></span><br><span class="line">    print(num)</span><br></pre></td></tr></table></figure>
 
-<h5 id="6-输出-1-100-内的所有偶数"><a href="#6-输出-1-100-内的所有偶数" class="headerlink" title="6.输出 1-100 内的所有偶数"></a>6.输出 1-100 内的所有偶数</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">num = <span class="number">1</span></span><br><span class="line"><span class="keyword">while</span> num &lt; <span class="number">101</span>:</span><br><span class="line">    <span class="keyword">if</span> num % <span class="number">2</span> == <span class="number">0</span>:</span><br><span class="line">        print(num)</span><br><span class="line">    num = num + <span class="number">1</span></span><br></pre></td></tr></table></figure>
+<h5 id="6-输出-1-100-内的所有偶数"><a href="#6-输出-1-100-内的所有偶数" class="headerlink" title="6.输出 1-100 内的所有偶数"></a>6.输出 1-100 内的所有偶数</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">num = <span class="number">1</span></span><br><span class="line"><span class="keyword">while</span> num &lt; <span class="number">101</span>:</span><br><span class="line">true<span class="keyword">if</span> num % <span class="number">2</span> == <span class="number">0</span>:</span><br><span class="line">truetrueprint(num)</span><br><span class="line">truenum = num + <span class="number">1</span></span><br></pre></td></tr></table></figure>
 
 <h5 id="7-求1-2-3-4-5-…-99的所有数的和"><a href="#7-求1-2-3-4-5-…-99的所有数的和" class="headerlink" title="7.求1-2+3-4+5 … 99的所有数的和"></a>7.求1-2+3-4+5 … 99的所有数的和</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">num = <span class="number">1</span></span><br><span class="line">sum = <span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> num &lt;<span class="number">100</span>:</span><br><span class="line">    <span class="keyword">if</span> num % <span class="number">2</span> == <span class="number">1</span>:</span><br><span class="line">        sum = sum + num</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        sum = sum - num</span><br><span class="line">    num = num + <span class="number">1</span></span><br><span class="line">print(sum)</span><br></pre></td></tr></table></figure>
 
@@ -408,6 +408,15 @@
 
         
 
+          <div class="post-nav">
+            <div class="post-nav-item">
+            </div>
+            <div class="post-nav-item">
+                <a href="/2020/08/18/day2/" rel="next" title="DAY2作业">
+                  DAY2作业 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
       </footer>
     
   </article>
@@ -463,15 +472,15 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">6k</span>
+    <span title="站点总字数">16k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">6 分钟</span>
+    <span title="站点阅读时长">14 分钟</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>
 
       

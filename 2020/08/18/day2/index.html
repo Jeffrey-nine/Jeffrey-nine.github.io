@@ -22,31 +22,33 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"8.0.0-rc.5","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false};
   </script>
 
-  <meta name="description" content="愿你走出半生路 归来仍是少年">
-<meta property="og:type" content="website">
-<meta property="og:title" content="好好学习">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="day2作业1.写代码，有如下列表，按照要求实现每一个功能。1li &#x3D; [&quot;pounds&quot;, &quot;szk&quot;, &quot;haoda&quot;, &quot;barry&quot;, &quot;devops&quot;]  计算列表的长度并输出12li &#x3D; [&quot;pounds&quot;, &quot;szk&quot;, &quot;haoda">
+<meta property="og:type" content="article">
+<meta property="og:title" content="DAY2作业">
+<meta property="og:url" content="http://yoursite.com/2020/08/18/day2/index.html">
 <meta property="og:site_name" content="好好学习">
-<meta property="og:description" content="愿你走出半生路 归来仍是少年">
+<meta property="og:description" content="day2作业1.写代码，有如下列表，按照要求实现每一个功能。1li &#x3D; [&quot;pounds&quot;, &quot;szk&quot;, &quot;haoda&quot;, &quot;barry&quot;, &quot;devops&quot;]  计算列表的长度并输出12li &#x3D; [&quot;pounds&quot;, &quot;szk&quot;, &quot;haoda">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-08-18T15:58:57.000Z">
+<meta property="article:modified_time" content="2020-08-18T19:35:32.594Z">
 <meta property="article:author" content="Jeffrey">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://yoursite.com/">
+<link rel="canonical" href="http://yoursite.com/2020/08/18/day2/">
 
 
 <script class="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>好好学习</title>
+  <title>DAY2作业 | 好好学习</title>
   
 
 
@@ -162,7 +164,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -174,6 +176,7 @@
 
       <!--noindex-->
       <section class="post-toc-wrap sidebar-panel">
+          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#day2%E4%BD%9C%E4%B8%9A"><span class="nav-number">1.</span> <span class="nav-text">day2作业</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-%E5%86%99%E4%BB%A3%E7%A0%81%EF%BC%8C%E6%9C%89%E5%A6%82%E4%B8%8B%E5%88%97%E8%A1%A8%EF%BC%8C%E6%8C%89%E7%85%A7%E8%A6%81%E6%B1%82%E5%AE%9E%E7%8E%B0%E6%AF%8F%E4%B8%80%E4%B8%AA%E5%8A%9F%E8%83%BD%E3%80%82"><span class="nav-number">2.</span> <span class="nav-text">1.写代码，有如下列表，按照要求实现每一个功能。</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%86%99%E4%BB%A3%E7%A0%81%EF%BC%8C%E6%9C%89%E5%A6%82%E4%B8%8B%E5%88%97%E8%A1%A8%EF%BC%8C%E5%88%A9%E7%94%A8%E5%88%87%E7%89%87%E5%AE%9E%E7%8E%B0%E6%AF%8F%E4%B8%80%E4%B8%AA%E5%8A%9F%E8%83%BD"><span class="nav-number">2.1.</span> <span class="nav-text">写代码，有如下列表，利用切片实现每一个功能</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%86%99%E4%BB%A3%E7%A0%81%EF%BC%8C%E6%9C%89%E5%A6%82%E4%B8%8B%E5%88%97%E8%A1%A8%EF%BC%8C%E6%8C%89%E7%85%A7%E8%A6%81%E6%B1%82%E5%AE%9E%E7%8E%B0%E6%AF%8F%E4%B8%80%E4%B8%AA%E5%8A%9F%E8%83%BD%E3%80%82"><span class="nav-number">3.</span> <span class="nav-text">写代码，有如下列表，按照要求实现每一个功能。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AF%B7%E7%94%A8%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0%E5%BE%AA%E7%8E%AF%E8%BE%93%E5%87%BA%E5%85%83%E7%B4%A0%E5%92%8C%E5%80%BC%EF%BC%9Ausers-%E2%80%9Cszk%E2%80%9D-%E2%80%9Dpounds%E2%80%9D-%E2%80%9D%E6%B3%A2%E5%A7%90%E2%80%9D-%EF%BC%8C%E5%A6%82"><span class="nav-number">4.</span> <span class="nav-text">请用代码实现循环输出元素和值：users &#x3D; [“szk”,”pounds”,”波姐”] ，如:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%86%99%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0%E4%BB%A5%E4%B8%8B%E5%8A%9F%E8%83%BD"><span class="nav-number">5.</span> <span class="nav-text">写代码实现以下功能</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AF%B7%E7%94%A8%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0"><span class="nav-number">6.</span> <span class="nav-text">请用代码实现</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%A9%E7%94%A8for%E5%BE%AA%E7%8E%AF%E5%92%8Crange%E6%89%BE%E5%87%BA-0-100-%E4%BB%A5%E5%86%85%E6%89%80%E6%9C%89%E7%9A%84%E5%81%B6%E6%95%B0%EF%BC%8C%E5%B9%B6%E8%BF%BD%E5%8A%A0%E5%88%B0%E4%B8%80%E4%B8%AA%E5%88%97%E8%A1%A8"><span class="nav-number">7.</span> <span class="nav-text">利用for循环和range找出 0 ~ 100 以内所有的偶数，并追加到一个列表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%A9%E7%94%A8for%E5%BE%AA%E7%8E%AF%E5%92%8Crange-%E6%89%BE%E5%87%BA-0-50-%E4%BB%A5%E5%86%85%E8%83%BD%E8%A2%AB3%E6%95%B4%E9%99%A4%E7%9A%84%E6%95%B0%EF%BC%8C%E5%B9%B6%E8%BF%BD%E5%8A%A0%E5%88%B0%E4%B8%80%E4%B8%AA%E5%88%97%E8%A1%A8"><span class="nav-number">8.</span> <span class="nav-text">利用for循环和range 找出 0 ~ 50 以内能被3整除的数，并追加到一个列表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%A9%E7%94%A8for%E5%BE%AA%E7%8E%AF%E5%92%8Crange%E4%BB%8E100-1%EF%BC%8C%E5%80%92%E5%BA%8F%E6%89%93%E5%8D%B0"><span class="nav-number">9.</span> <span class="nav-text">利用for循环和range从100~1，倒序打印</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%A9%E7%94%A8for%E5%BE%AA%E7%8E%AF%E5%92%8Crange%E5%BE%AA%E7%8E%AF1-30%E7%9A%84%E6%95%B0%E5%AD%97%EF%BC%8C%E5%B0%86%E8%83%BD%E8%A2%AB3%E6%95%B4%E9%99%A4%E7%9A%84%E6%B7%BB%E5%8A%A0%E5%88%B0%E4%B8%80%E4%B8%AA%E5%88%97%E8%A1%A8%E4%B8%AD%EF%BC%8C%E5%B0%86%E8%83%BD%E8%A2%AB4%E6%95%B4%E9%99%A4%E7%9A%84%E6%B7%BB%E5%8A%A0%E5%88%B0%E5%8F%A6%E5%A4%96%E4%B8%80%E4%B8%AA%E5%88%97%E8%A1%A8%E4%B8%AD"><span class="nav-number">10.</span> <span class="nav-text">利用for循环和range循环1-30的数字，将能被3整除的添加到一个列表中，将能被4整除的添加到另外一个列表中</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%A0%B9%E6%8D%AE%E9%9C%80%E6%B1%82%E5%86%99%E4%BB%A3%E7%A0%81-dic-%E2%80%98k1%E2%80%99-%E2%80%9Cv1%E2%80%9D-%E2%80%9Ck2%E2%80%9D-%E2%80%9Cv2%E2%80%9D-%E2%80%9Ck3%E2%80%9D-11-22-33"><span class="nav-number">11.</span> <span class="nav-text">根据需求写代码  dic &#x3D; {‘k1’: “v1”, “k2”: “v2”, “k3”: [11,22,33]}</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%A0%B9%E6%8D%AE%E9%9C%80%E6%B1%82%E5%86%99%E4%BB%A3%E7%A0%81"><span class="nav-number">12.</span> <span class="nav-text">根据需求写代码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%A4%E6%96%AD%E4%BB%A5%E4%B8%8B%E5%80%BC%E9%82%A3%E4%B8%AA%E8%83%BD%E5%81%9A%E5%AD%97%E5%85%B8%E7%9A%84key-%EF%BC%9F%E9%82%A3%E4%B8%AA%E8%83%BD%E5%81%9A%E9%9B%86%E5%90%88%E7%9A%84%E5%85%83%E7%B4%A0%EF%BC%9F"><span class="nav-number">13.</span> <span class="nav-text">判断以下值那个能做字典的key ？那个能做集合的元素？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B0%86%E5%AD%97%E5%85%B8%E7%9A%84%E9%94%AE%E5%92%8C%E5%80%BC%E5%88%86%E5%88%AB%E8%BF%BD%E5%8A%A0%E5%88%B0-key-list-%E5%92%8C-value-list-%E4%B8%A4%E4%B8%AA%E5%88%97%E8%A1%A8%E4%B8%AD%EF%BC%8C%E5%A6%82%EF%BC%9A"><span class="nav-number">14.</span> <span class="nav-text">将字典的键和值分别追加到 key_list 和 value_list 两个列表中，如：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AD%97%E5%85%B8dic-%E2%80%98k1%E2%80%99-%E2%80%9Cv1%E2%80%9D-%E2%80%9Ck2%E2%80%9D-%E2%80%9Cv2%E2%80%9D-%E2%80%9Ck3%E2%80%9D-11-22-33"><span class="nav-number">15.</span> <span class="nav-text">字典dic &#x3D; {‘k1’: “v1”, “k2”: “v2”, “k3”: [11,22,33]}</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AF%B7%E5%BE%AA%E7%8E%AF%E6%89%93%E5%8D%B0k2%E5%AF%B9%E5%BA%94%E7%9A%84%E5%80%BC%E4%B8%AD%E7%9A%84%E6%AF%8F%E4%B8%AA%E5%85%83%E7%B4%A0"><span class="nav-number">16.</span> <span class="nav-text">请循环打印k2对应的值中的每个元素</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BE%93%E5%87%BA%E5%95%86%E5%93%81%E5%88%97%E8%A1%A8%EF%BC%8C%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5%E5%BA%8F%E5%8F%B7%EF%BC%8C%E6%98%BE%E7%A4%BA%E7%94%A8%E6%88%B7%E9%80%89%E4%B8%AD%E7%9A%84%E5%95%86%E5%93%81"><span class="nav-number">17.</span> <span class="nav-text">输出商品列表，用户输入序号，显示用户选中的商品</span></a></li></ol></div>
       </section>
       <!--/noindex-->
 
@@ -223,11 +226,12 @@
 </noscript>
 
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
       
 
       
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -246,10 +250,9 @@
     
     
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/08/18/day2/" class="post-title-link" itemprop="url">DAY2作业</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          DAY2作业
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -300,7 +303,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <hr>
+        <hr>
 <h4 id="day2作业"><a href="#day2作业" class="headerlink" title="day2作业"></a><div id='title'>day2作业</div></h4><h4 id="1-写代码，有如下列表，按照要求实现每一个功能。"><a href="#1-写代码，有如下列表，按照要求实现每一个功能。" class="headerlink" title="1.写代码，有如下列表，按照要求实现每一个功能。"></a>1.写代码，有如下列表，按照要求实现每一个功能。</h4><figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">li</span> = [<span class="string">&quot;pounds&quot;</span>, <span class="string">&quot;szk&quot;</span>, <span class="string">&quot;haoda&quot;</span>, <span class="string">&quot;barry&quot;</span>, <span class="string">&quot;devops&quot;</span>]</span><br></pre></td></tr></table></figure>
 <ul>
 <li>计算列表的长度并输出<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">li</span> = [<span class="string">&quot;pounds&quot;</span>, <span class="string">&quot;szk&quot;</span>, <span class="string">&quot;haoda&quot;</span>, <span class="string">&quot;barry&quot;</span>, <span class="string">&quot;devops&quot;</span>]</span><br><span class="line"><span class="function"><span class="title">print</span><span class="params">(len(li)</span></span>)</span><br></pre></td></tr></table></figure></li>
@@ -398,203 +401,30 @@
 
 <h4 id="输出商品列表，用户输入序号，显示用户选中的商品"><a href="#输出商品列表，用户输入序号，显示用户选中的商品" class="headerlink" title="输出商品列表，用户输入序号，显示用户选中的商品"></a>输出商品列表，用户输入序号，显示用户选中的商品</h4><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">商品列表：</span></span><br><span class="line"><span class="string">goods</span> <span class="string">=</span> [</span><br><span class="line">&#123;<span class="attr">&quot;name&quot;:</span> <span class="string">&quot;电脑&quot;</span>, <span class="attr">&quot;price&quot;:</span> <span class="number">1999</span>&#125;,</span><br><span class="line">&#123;<span class="attr">&quot;name&quot;:</span> <span class="string">&quot;鼠标&quot;</span>, <span class="attr">&quot;price&quot;:</span> <span class="number">10</span>&#125;,</span><br><span class="line">&#123;<span class="attr">&quot;name&quot;:</span> <span class="string">&quot;游艇&quot;</span>, <span class="attr">&quot;price&quot;:</span> <span class="number">20</span>&#125;,</span><br><span class="line">&#123;<span class="attr">&quot;name&quot;:</span> <span class="string">&quot;美女&quot;</span>, <span class="attr">&quot;price&quot;:</span> <span class="number">998</span>&#125;</span><br><span class="line">]</span><br><span class="line"><span class="string">要求:</span></span><br><span class="line"><span class="number">1</span><span class="string">：页面显示</span> <span class="string">序号</span> <span class="string">+</span> <span class="string">商品名称</span> <span class="string">+</span> <span class="string">商品价格，如：</span></span><br><span class="line">      <span class="number">1</span> <span class="string">电脑</span> <span class="number">1999</span> </span><br><span class="line">      <span class="number">2</span> <span class="string">鼠标</span> <span class="number">10</span></span><br><span class="line">true  <span class="string">...</span></span><br><span class="line"><span class="number">2</span><span class="string">：用户输入选择的商品序号，然后打印商品名称及商品价格</span></span><br><span class="line"><span class="number">3</span><span class="string">：如果用户输入的商品序号有误，则提示输入有误，并重新输入。</span></span><br><span class="line"><span class="number">4</span><span class="string">：用户输入Q或者q，退出程序。</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">goods = [</span><br><span class="line">&#123;<span class="string">&quot;name&quot;</span>: <span class="string">&quot;电脑&quot;</span>, <span class="string">&quot;price&quot;</span>: <span class="number">1999</span>&#125;,</span><br><span class="line">&#123;<span class="string">&quot;name&quot;</span>: <span class="string">&quot;鼠标&quot;</span>, <span class="string">&quot;price&quot;</span>: <span class="number">10</span>&#125;,</span><br><span class="line">&#123;<span class="string">&quot;name&quot;</span>: <span class="string">&quot;游艇&quot;</span>, <span class="string">&quot;price&quot;</span>: <span class="number">20</span>&#125;,</span><br><span class="line">&#123;<span class="string">&quot;name&quot;</span>: <span class="string">&quot;美女&quot;</span>, <span class="string">&quot;price&quot;</span>: <span class="number">998</span>&#125;</span><br><span class="line">]</span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    <span class="keyword">for</span> inx,value <span class="keyword">in</span> enumerate(goods):</span><br><span class="line">          print(inx,value[<span class="string">&#x27;name&#x27;</span>],value[<span class="string">&#x27;price&#x27;</span>])</span><br><span class="line">    num = input(<span class="string">&quot;请输入商品编号,按Q/q退出:):&quot;</span>).strip()</span><br><span class="line">    <span class="keyword">if</span> num == <span class="string">&#x27;q&#x27;</span> <span class="keyword">or</span> num == <span class="string">&#x27;Q&#x27;</span>:</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">if</span>  num.isdigit():</span><br><span class="line">        num = int(num)</span><br><span class="line">        <span class="keyword">if</span> num &gt;= <span class="number">0</span> <span class="keyword">and</span> num &lt; len(goods):</span><br><span class="line">            print(<span class="string">&#x27;商品:%s  价格:%s&#x27;</span> % (goods[num][<span class="string">&#x27;name&#x27;</span>], goods[num][<span class="string">&#x27;price&#x27;</span>]))</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            print(<span class="string">&quot;输入有误，请重新输入&quot;</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">&quot;请输入正确的产品编号&quot;</span>)</span><br></pre></td></tr></table></figure>
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2020/08/13/hello-world/" rel="prev" title="DAY1作业">
+                  <i class="fa fa-chevron-left"></i> DAY1作业
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
       </footer>
+    
   </article>
   
   
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/08/13/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Jeffrey">
-      <meta itemprop="description" content="愿你走出半生路 归来仍是少年">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="好好学习">
-    </span>
-
-    
-    
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/08/13/hello-world/" class="post-title-link" itemprop="url">DAY1作业</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-08-13 12:12:57 / 修改时间：02:14:39" itemprop="dateCreated datePublished" datetime="2020-08-13T12:12:57+08:00">2020-08-13</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Learn-Python/" itemprop="url" rel="index"><span itemprop="name">Learn Python</span></a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>6.2k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>6 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <hr>
-<h4 id="第二章作业"><a href="#第二章作业" class="headerlink" title="第二章作业"></a><div id='title'>第二章作业</div></h4><h5 id="1-列举你了解的编码及他们之间的区别？"><a href="#1-列举你了解的编码及他们之间的区别？" class="headerlink" title="1.列举你了解的编码及他们之间的区别？"></a>1.列举你了解的编码及他们之间的区别？</h5><ul>
-<li>ASCII: python2默认的编码，一个字母是8位</li>
-<li>Unicode(万国码)：一个字母是32位</li>
-<li>UTF-8：万国码的压缩码，最少用一个字节，ascii码中的内容用1个字节保存、欧洲的字符用2个字节保存，东亚的字符用3个字节保存</li>
-</ul>
-<h5 id="2-列举你了解的Python2和Python3的区别？"><a href="#2-列举你了解的Python2和Python3的区别？" class="headerlink" title="2.列举你了解的Python2和Python3的区别？"></a>2.列举你了解的Python2和Python3的区别？</h5><ul>
-<li>python2默认的编码是ACSII，python3默认的编码是UTF-8</li>
-<li>print不一样<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt; print(<span class="string">&quot;hello&quot;</span>, <span class="string">&quot;world&quot;</span>)</span><br><span class="line">(<span class="string">&#x27;hello&#x27;</span>, <span class="string">&#x27;world&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt; print(<span class="string">&quot;hello&quot;</span>, <span class="string">&quot;world&quot;</span>)</span><br><span class="line">hello world</span><br></pre></td></tr></table></figure>
-<h5 id="3-你了解的python都有那些数据类型？"><a href="#3-你了解的python都有那些数据类型？" class="headerlink" title="3.你了解的python都有那些数据类型？"></a>3.你了解的python都有那些数据类型？</h5></li>
-<li>整型</li>
-<li>字符串</li>
-<li>布尔</li>
-</ul>
-<h5 id="4-补充代码，实现以下功能。"><a href="#4-补充代码，实现以下功能。" class="headerlink" title="4.补充代码，实现以下功能。"></a>4.补充代码，实现以下功能。</h5><p>value = (‘51devops”niubi’)</p>
-<p>print(value)  # 要求输出  51devops”niubi</p>
-<h5 id="5-用print打印出下面内容："><a href="#5-用print打印出下面内容：" class="headerlink" title="5.用print打印出下面内容："></a>5.用print打印出下面内容：</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">value = <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">⽂能提笔安天下,</span></span><br><span class="line"><span class="string">武能上⻢定乾坤.</span></span><br><span class="line"><span class="string">⼼存谋略何⼈胜,</span></span><br><span class="line"><span class="string">古今英雄唯是君。</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line">print(value)</span><br></pre></td></tr></table></figure>
-
-<h5 id="6-变量名的命名规范和建议？"><a href="#6-变量名的命名规范和建议？" class="headerlink" title="6.变量名的命名规范和建议？"></a>6.变量名的命名规范和建议？</h5><ul>
-<li>变量的等号两边必须是有空格的，各大公司code review</li>
-<li>变量名必须要有意义</li>
-<li>变量名只能是字母、数字或下划线的任意组合</li>
-<li>变量名建议不使用拼音和中文</li>
-<li>变量名不要过长</li>
-</ul>
-<h5 id="7-如下那个变量名是正确的？"><a href="#7-如下那个变量名是正确的？" class="headerlink" title="7.如下那个变量名是正确的？"></a>7.如下那个变量名是正确的？</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">name = <span class="string">&#x27;51devops&#x27;</span>   对</span><br><span class="line">_ = <span class="string">&#x27;echo&#x27;</span>          对</span><br><span class="line">_9 = <span class="string">&quot;zhangsan&quot;</span>     对</span><br><span class="line"><span class="number">9</span>name = <span class="string">&quot;xxx&quot;</span></span><br><span class="line">devops(edu = <span class="number">666</span></span><br></pre></td></tr></table></figure>
-<h5 id="8-简述你了解if条件语句的基本结构"><a href="#8-简述你了解if条件语句的基本结构" class="headerlink" title="8.简述你了解if条件语句的基本结构"></a>8.简述你了解if条件语句的基本结构</h5><ul>
-<li>if …</li>
-<li>if … else …</li>
-<li>if … elif …  else …</li>
-</ul>
-<h5 id="9-设定一个理想数字比如：66，让用户输入数字，如果比66大，则显示猜测的结果大了；如果比66小，则显示猜测的结果小了-只有等于66，显示猜测结果正确。"><a href="#9-设定一个理想数字比如：66，让用户输入数字，如果比66大，则显示猜测的结果大了；如果比66小，则显示猜测的结果小了-只有等于66，显示猜测结果正确。" class="headerlink" title="9.设定一个理想数字比如：66，让用户输入数字，如果比66大，则显示猜测的结果大了；如果比66小，则显示猜测的结果小了;只有等于66，显示猜测结果正确。"></a>9.设定一个理想数字比如：66，让用户输入数字，如果比66大，则显示猜测的结果大了；如果比66小，则显示猜测的结果小了;只有等于66，显示猜测结果正确。</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">num = int(input(<span class="string">&quot;请输入数字：&quot;</span>))</span><br><span class="line"><span class="keyword">if</span> num &gt; <span class="number">66</span>:</span><br><span class="line">    print(<span class="string">&quot;猜测的结果大了&quot;</span>)</span><br><span class="line"><span class="keyword">elif</span> num &lt; <span class="number">66</span>:</span><br><span class="line">    print(<span class="string">&quot;猜测的结果小了&quot;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">&quot;猜测结果正确&quot;</span>)</span><br><span class="line">``` </span><br><span class="line"></span><br><span class="line"><span class="comment">##### 10.写程序，成绩有ABCDE5个等级，与分数的对应关系如下.要求用户输入0-100的数字后，你能正确打印他的对应成绩</span></span><br><span class="line">A   <span class="number">90</span><span class="number">-100</span></span><br><span class="line">B   <span class="number">80</span><span class="number">-89</span></span><br><span class="line">C   <span class="number">60</span><span class="number">-79</span></span><br><span class="line">D   <span class="number">40</span><span class="number">-59</span></span><br><span class="line">E   <span class="number">0</span><span class="number">-39</span></span><br><span class="line">```python</span><br><span class="line">number = int(input(<span class="string">&quot;请输入0-100的数字:&quot;</span>))</span><br><span class="line"><span class="keyword">if</span> number &gt;= <span class="number">90</span>:</span><br><span class="line">    print(<span class="string">&quot;成绩：A&quot;</span>)</span><br><span class="line"><span class="keyword">elif</span> number &gt;= <span class="number">80</span>:</span><br><span class="line">    print(<span class="string">&quot;成绩：B&quot;</span>)</span><br><span class="line"><span class="keyword">elif</span> number &gt;= <span class="number">60</span>:</span><br><span class="line">    print(<span class="string">&quot;成绩：C&quot;</span>)</span><br><span class="line"><span class="keyword">elif</span> number &gt;= <span class="number">40</span>:</span><br><span class="line">    print(<span class="string">&quot;成绩：D&quot;</span>)</span><br><span class="line"><span class="keyword">elif</span> number &gt;= <span class="number">0</span>:</span><br><span class="line">    print(<span class="string">&quot;成绩：E&quot;</span>)</span><br></pre></td></tr></table></figure>
-
-<h5 id="11-模拟10086客服电话（条件语句的嵌套）"><a href="#11-模拟10086客服电话（条件语句的嵌套）" class="headerlink" title="11.模拟10086客服电话（条件语句的嵌套）"></a>11.模拟10086客服电话（条件语句的嵌套）</h5><h4 id="第三章作业"><a href="#第三章作业" class="headerlink" title="第三章作业"></a><div id='title'>第三章作业</div></h4><h5 id="1-猜数字，设定一个理想数字比如：66，让用户输入数字，如果比66大，则显示猜测的结果大了；如果比66小，则显示猜测的结果小了-只有等于66，显示猜测结果正确，然后退出循环。"><a href="#1-猜数字，设定一个理想数字比如：66，让用户输入数字，如果比66大，则显示猜测的结果大了；如果比66小，则显示猜测的结果小了-只有等于66，显示猜测结果正确，然后退出循环。" class="headerlink" title="1.猜数字，设定一个理想数字比如：66，让用户输入数字，如果比66大，则显示猜测的结果大了；如果比66小，则显示猜测的结果小了;只有等于66，显示猜测结果正确，然后退出循环。"></a>1.猜数字，设定一个理想数字比如：66，让用户输入数字，如果比66大，则显示猜测的结果大了；如果比66小，则显示猜测的结果小了;只有等于66，显示猜测结果正确，然后退出循环。</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    num = int(input(<span class="string">&#x27;请输入你要猜的数:&#x27;</span>))</span><br><span class="line">    <span class="keyword">if</span> num &gt; <span class="number">66</span>:</span><br><span class="line">        print(<span class="string">&#x27;猜测的结果大了&#x27;</span>)</span><br><span class="line">    <span class="keyword">elif</span> num &lt; <span class="number">66</span>:</span><br><span class="line">        print(<span class="string">&#x27;猜测的结果小了&#x27;</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">&#x27;猜测结果正确&#x27;</span>)</span><br><span class="line">        <span class="keyword">break</span></span><br></pre></td></tr></table></figure>
-<h5 id="2-在上一题的基础，设置：给用户三次猜测机会，如果三次之内猜测对了，则显示猜测正确，退出循环，如果三次之内没有猜测正确，则自动退出循环，并显示‘大笨蛋’"><a href="#2-在上一题的基础，设置：给用户三次猜测机会，如果三次之内猜测对了，则显示猜测正确，退出循环，如果三次之内没有猜测正确，则自动退出循环，并显示‘大笨蛋’" class="headerlink" title="2.在上一题的基础，设置：给用户三次猜测机会，如果三次之内猜测对了，则显示猜测正确，退出循环，如果三次之内没有猜测正确，则自动退出循环，并显示‘大笨蛋’"></a>2.在上一题的基础，设置：给用户三次猜测机会，如果三次之内猜测对了，则显示猜测正确，退出循环，如果三次之内没有猜测正确，则自动退出循环，并显示‘大笨蛋’</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">count = <span class="number">1</span></span><br><span class="line"><span class="keyword">while</span> count &lt;= <span class="number">3</span>:</span><br><span class="line">    num = int(input(<span class="string">&#x27;请输入你要猜的数:&#x27;</span>))</span><br><span class="line">    <span class="keyword">if</span> num &gt; <span class="number">66</span>:</span><br><span class="line">        print(<span class="string">&#x27;猜测的结果大了&#x27;</span>)</span><br><span class="line">    <span class="keyword">elif</span> num &lt; <span class="number">66</span>:</span><br><span class="line">        print(<span class="string">&#x27;猜测的结果小了&#x27;</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">&#x27;猜测结果正确&#x27;</span>)</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    count = count + <span class="number">1</span></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">&#x27;大笨蛋&#x27;</span>)</span><br></pre></td></tr></table></figure>
-
-<h5 id="3-使用两种方法实现输出-1-2-3-4-5-6-8-9-10"><a href="#3-使用两种方法实现输出-1-2-3-4-5-6-8-9-10" class="headerlink" title="3.使用两种方法实现输出 1 2 3 4 5 6 8 9 10"></a>3.使用两种方法实现输出 1 2 3 4 5 6 8 9 10</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">num = <span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> num &lt; <span class="number">10</span>:</span><br><span class="line">    num = num + <span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> num == <span class="number">7</span>:</span><br><span class="line">        <span class="keyword">continue</span></span><br><span class="line">    print(num)</span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">num = <span class="number">1</span></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    <span class="keyword">if</span> num == <span class="number">10</span>:</span><br><span class="line">       print(num)</span><br><span class="line">       <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">if</span> num == <span class="number">7</span>:</span><br><span class="line">       num = num + <span class="number">1</span></span><br><span class="line">       <span class="keyword">continue</span></span><br><span class="line">    print(num)</span><br><span class="line">    num = num + <span class="number">1</span></span><br></pre></td></tr></table></figure>
-<h5 id="4-求1-100的所有数的和"><a href="#4-求1-100的所有数的和" class="headerlink" title="4.求1-100的所有数的和"></a>4.求1-100的所有数的和</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">num = <span class="number">1</span></span><br><span class="line">sum = <span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> num &lt;= <span class="number">100</span>:</span><br><span class="line">truesum = sum + num</span><br><span class="line">truenum = num + <span class="number">1</span></span><br><span class="line">print(sum)</span><br><span class="line">````</span><br><span class="line"></span><br><span class="line"><span class="comment">##### 5.输出 1-100 内的所有奇数</span></span><br><span class="line">```python</span><br><span class="line">num=<span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> num&lt;<span class="number">100</span>:</span><br><span class="line">    num = num + <span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> num % <span class="number">2</span>==<span class="number">0</span>:</span><br><span class="line">        <span class="keyword">continue</span></span><br><span class="line">    print(num)</span><br></pre></td></tr></table></figure>
-
-<h5 id="6-输出-1-100-内的所有偶数"><a href="#6-输出-1-100-内的所有偶数" class="headerlink" title="6.输出 1-100 内的所有偶数"></a>6.输出 1-100 内的所有偶数</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">num = <span class="number">1</span></span><br><span class="line"><span class="keyword">while</span> num &lt; <span class="number">101</span>:</span><br><span class="line">true<span class="keyword">if</span> num % <span class="number">2</span> == <span class="number">0</span>:</span><br><span class="line">truetrueprint(num)</span><br><span class="line">truenum = num + <span class="number">1</span></span><br></pre></td></tr></table></figure>
-
-<h5 id="7-求1-2-3-4-5-…-99的所有数的和"><a href="#7-求1-2-3-4-5-…-99的所有数的和" class="headerlink" title="7.求1-2+3-4+5 … 99的所有数的和"></a>7.求1-2+3-4+5 … 99的所有数的和</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">num = <span class="number">1</span></span><br><span class="line">sum = <span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> num &lt;<span class="number">100</span>:</span><br><span class="line">    <span class="keyword">if</span> num % <span class="number">2</span> == <span class="number">1</span>:</span><br><span class="line">        sum = sum + num</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        sum = sum - num</span><br><span class="line">    num = num + <span class="number">1</span></span><br><span class="line">print(sum)</span><br></pre></td></tr></table></figure>
-
-<h5 id="8-⽤户登陆（三次输错机会）且每次输错误时显示剩余错误次数（提示：使⽤字符串格式化）"><a href="#8-⽤户登陆（三次输错机会）且每次输错误时显示剩余错误次数（提示：使⽤字符串格式化）" class="headerlink" title="8.⽤户登陆（三次输错机会）且每次输错误时显示剩余错误次数（提示：使⽤字符串格式化）"></a>8.⽤户登陆（三次输错机会）且每次输错误时显示剩余错误次数（提示：使⽤字符串格式化）</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">count=<span class="number">3</span></span><br><span class="line">username=<span class="string">&#x27;zhaohui&#x27;</span></span><br><span class="line">password=<span class="string">&#x27;123456&#x27;</span></span><br><span class="line"><span class="keyword">while</span> count&gt;<span class="number">0</span>:</span><br><span class="line">    name=input(<span class="string">&#x27;请输入你的名字:&#x27;</span>)</span><br><span class="line">    count = count - <span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> name==username:</span><br><span class="line">        password1=input(<span class="string">&#x27;请输入密码:&#x27;</span>)</span><br><span class="line">        <span class="keyword">if</span> password1==password:</span><br><span class="line">            print(<span class="string">&#x27;登录成功&#x27;</span>)</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            print(<span class="string">&#x27;请重新输入你的剩余错误次数%s&#x27;</span>%(count))</span><br><span class="line">            <span class="keyword">if</span> countzhahu == <span class="number">0</span>:</span><br><span class="line">                print(<span class="string">&#x27;您的机会已经用完，结束本次操作&#x27;</span>)</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">&#x27;用户名错误,剩余次数%s&#x27;</span>%(count))</span><br></pre></td></tr></table></figure>
-<h5 id="9-猜年龄游戏"><a href="#9-猜年龄游戏" class="headerlink" title="9.猜年龄游戏"></a>9.猜年龄游戏</h5><p>要求：允许用户最多尝试3次，3次都没猜对的话，就直接退出，如果猜对了，打印恭喜信息并退出。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">count = <span class="number">0</span></span><br><span class="line">age = <span class="number">30</span></span><br><span class="line"><span class="keyword">while</span> count &lt;<span class="number">3</span> :</span><br><span class="line">    count =count + <span class="number">1</span></span><br><span class="line">    age_input = int(input(<span class="string">&quot;请输入您猜的年龄:&quot;</span>))</span><br><span class="line">    <span class="keyword">if</span> age_input != age:</span><br><span class="line">        print(<span class="string">&quot;猜错了，请重新输入&quot;</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">&quot;恭喜&quot;</span>)</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">if</span> count == <span class="number">3</span>:</span><br><span class="line">        print(<span class="string">&quot;&quot;</span>)</span><br></pre></td></tr></table></figure>
-
-<h5 id="10-猜年龄游戏升级版"><a href="#10-猜年龄游戏升级版" class="headerlink" title="10.猜年龄游戏升级版"></a>10.猜年龄游戏升级版</h5><p>要求：允许用户最多尝试3次，每尝试3次后，如果还没猜对，就问用户是否还想继续玩，如果回答Y，就继续让其猜3次，以此往复，如果回答N，就退出程序，如猜果对了，就直接退出。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">count = <span class="number">0</span></span><br><span class="line">age = <span class="string">&#x27;30&#x27;</span></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    age_input = input(<span class="string">&#x27;请输入您猜的年龄:&#x27;</span>)</span><br><span class="line">    <span class="keyword">if</span> age_input == age:</span><br><span class="line">        print(<span class="string">&#x27;恭喜你，猜对啦！&#x27;</span>)</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">&#x27;猜错啦，请重新输入&#x27;</span>)</span><br><span class="line">        count = count + <span class="number">1</span></span><br><span class="line">        <span class="keyword">if</span> count == <span class="number">3</span>:</span><br><span class="line">            print(<span class="string">&#x27;您是否想重新玩，回答Y或者N&#x27;</span>)</span><br><span class="line">            ans = input(<span class="string">&#x27;请输入Y或者N： &#x27;</span>)</span><br><span class="line">            <span class="keyword">if</span> ans == <span class="string">&#x27;Y&#x27;</span>:</span><br><span class="line">                print(<span class="string">&#x27;请继续猜&#x27;</span>)</span><br><span class="line">            <span class="keyword">elif</span> ans == <span class="string">&#x27;N&#x27;</span>:</span><br><span class="line">                print(<span class="string">&#x27;感谢参与！&#x27;</span>)</span><br><span class="line">                <span class="keyword">break</span></span><br></pre></td></tr></table></figure>
-
-
-<h5 id="第四章作业"><a href="#第四章作业" class="headerlink" title="第四章作业"></a>第四章作业</h5><h5 id="1-有变量name-“szk-zeNb-“-完成如下操作："><a href="#1-有变量name-“szk-zeNb-“-完成如下操作：" class="headerlink" title="1.有变量name = “szk zeNb “ 完成如下操作："></a>1.有变量name = “szk zeNb “ 完成如下操作：</h5><ul>
-<li><p>移除 name 变量对应的值两边的空格,并输出处理结果</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">name = <span class="string">&quot;szk zeNb &quot;</span></span><br><span class="line">ret = name.strip()</span><br><span class="line">print(ret)</span><br></pre></td></tr></table></figure></li>
-<li><p>判断 name 变量是否以 “sz” 开头,并输出结果（用切片）</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">name = <span class="string">&quot;szk zeNb &quot;</span></span><br><span class="line">value = (name[<span class="number">0</span>:<span class="number">2</span>])</span><br><span class="line"><span class="keyword">if</span> value == <span class="string">&#x27;sz&#x27;</span>:</span><br><span class="line">    print(<span class="string">&quot;是以&#x27;sz&#x27;开头&quot;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">&quot;不是以&#x27;sz&#x27;开头&quot;</span>)</span><br></pre></td></tr></table></figure></li>
-<li><p>判断name变量是否以”Nb”结尾,并输出结果（用切片）</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">name = <span class="string">&quot;szk zeNb &quot;</span></span><br><span class="line">value = (name[<span class="number">-2</span>:])</span><br><span class="line"><span class="keyword">if</span> value == <span class="string">&#x27;Nb&#x27;</span>:</span><br><span class="line">    print(<span class="string">&quot;是以&#x27;Nb&#x27;结尾&quot;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">&quot;不是以&#x27;Nb&#x27;结尾&quot;</span>)</span><br></pre></td></tr></table></figure></li>
-<li><p>将 name 变量对应的值中的 所有的”z” 替换为 “p”,并输出结果</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">name = <span class="string">&quot;szk zeNb &quot;</span></span><br><span class="line">value = name.replace(<span class="string">&#x27;z&#x27;</span>,<span class="string">&#x27;p&#x27;</span>)</span><br><span class="line">print(value)</span><br></pre></td></tr></table></figure></li>
-<li><p>将name变量对应的值中的第一个”z”替换成”p”,并输出结果</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">name = <span class="string">&quot;szk zeNb &quot;</span></span><br><span class="line">value = name.replace(<span class="string">&#x27;z&#x27;</span>,<span class="string">&#x27;p&#x27;</span>,<span class="number">1</span>)</span><br><span class="line">print(value)</span><br></pre></td></tr></table></figure></li>
-<li><p>将 name 变量对应的值根据 所有的”z” 分割,并输出结果</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">name = <span class="string">&quot;szk zeNb &quot;</span></span><br><span class="line">value = name.split(<span class="string">&#x27;z&#x27;</span>)</span><br><span class="line">print(value)</span><br></pre></td></tr></table></figure></li>
-<li><p>将name变量对应的值根据第一个”z”分割,并输出结果</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">name = <span class="string">&quot;szk zeNb &quot;</span></span><br><span class="line">value = name.split(<span class="string">&#x27;z&#x27;</span>,<span class="number">1</span>)</span><br><span class="line">print(value)</span><br></pre></td></tr></table></figure></li>
-<li><p>将 name 变量对应的值变大写,并输出结果</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">name = <span class="string">&quot;szk zeNb &quot;</span></span><br><span class="line">value = name.upper()</span><br><span class="line">print(value)</span><br></pre></td></tr></table></figure></li>
-<li><p>将 name 变量对应的值变小写,并输出结果</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">name = <span class="string">&quot;szk zeNb &quot;</span></span><br><span class="line">value = name.lower()</span><br><span class="line">print(value)</span><br></pre></td></tr></table></figure></li>
-<li><p>请输出 name 变量对应的值的第 2 个字符?</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">name = <span class="string">&quot;szk zeNb &quot;</span></span><br><span class="line">print(name[<span class="number">1</span>:<span class="number">2</span>])</span><br></pre></td></tr></table></figure></li>
-<li><p>请输出 name 变量对应的值的前 3 个字符?</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">name = <span class="string">&quot;szk zeNb &quot;</span></span><br><span class="line">print(name[<span class="number">0</span>:<span class="number">4</span>])</span><br></pre></td></tr></table></figure></li>
-<li><p>请输出 name 变量对应的值的后 2 个字符?</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">name = <span class="string">&quot;szk zeNb &quot;</span></span><br><span class="line">print(name[<span class="number">-2</span>:])</span><br></pre></td></tr></table></figure>
-<h5 id="有字符串s-“123a4b5c”"><a href="#有字符串s-“123a4b5c”" class="headerlink" title="有字符串s = “123a4b5c”"></a>有字符串s = “123a4b5c”</h5></li>
-<li><p>通过对s切片形成新的字符串 “123”</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">s = <span class="string">&quot;123a4b5c&quot;</span></span><br><span class="line">print(s[<span class="number">0</span>:<span class="number">3</span>])</span><br></pre></td></tr></table></figure></li>
-<li><p>通过对s切片形成新的字符串 “a4b”</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">s = <span class="string">&quot;123a4b5c&quot;</span></span><br><span class="line">print(s[<span class="number">3</span>:<span class="number">6</span>])</span><br></pre></td></tr></table></figure></li>
-<li><p>通过对s切片形成字符串s5,s5 = “c”</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">s = <span class="string">&quot;123a4b5c&quot;</span></span><br><span class="line">s5 = s[<span class="number">-1</span>:]</span><br><span class="line">print(s5)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>通过对s切片形成字符串s6,s6 = “ba2”</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">s = <span class="string">&quot;123a4b5c&quot;</span></span><br><span class="line">s6 = s[<span class="number">-3</span>:<span class="number">-8</span>:<span class="number">-2</span>]</span><br><span class="line">print(s6)</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h5 id="使用while和for循环字符串-s-”asdfer”-中每个元素"><a href="#使用while和for循环字符串-s-”asdfer”-中每个元素" class="headerlink" title="使用while和for循环字符串 s=”asdfer” 中每个元素"></a>使用while和for循环字符串 s=”asdfer” 中每个元素</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">s = <span class="string">&quot;asdfer&quot;</span></span><br><span class="line"><span class="keyword">for</span> value <span class="keyword">in</span> s:</span><br><span class="line">    print(value)</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">s= <span class="string">&#x27;asdfer&#x27;</span></span><br><span class="line">count =<span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> count&lt;len(s):</span><br><span class="line">    print(s[count])</span><br><span class="line">    count+=<span class="number">1</span></span><br></pre></td></tr></table></figure>
-
-<h5 id="使用while和for循环分别对字符串-message-“伤情最是晚凉天，憔悴厮人不堪言。”-进行打印。"><a href="#使用while和for循环分别对字符串-message-“伤情最是晚凉天，憔悴厮人不堪言。”-进行打印。" class="headerlink" title="使用while和for循环分别对字符串 message = “伤情最是晚凉天，憔悴厮人不堪言。” 进行打印。"></a>使用while和for循环分别对字符串 message = “伤情最是晚凉天，憔悴厮人不堪言。” 进行打印。</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">message = <span class="string">&quot;伤情最是晚凉天，憔悴厮人不堪言。&quot;</span></span><br><span class="line">count =<span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> count&lt;len(message):</span><br><span class="line">    print(message[count])</span><br><span class="line">    count+=<span class="number">1</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">message = <span class="string">&quot;伤情最是晚凉天，憔悴厮人不堪言。&quot;</span></span><br><span class="line"><span class="keyword">for</span> value <span class="keyword">in</span> message:</span><br><span class="line">    print(message)</span><br></pre></td></tr></table></figure>
-
-<h5 id="获取用户输入的内容，并计算前四位”l”出现几次-并输出结果。"><a href="#获取用户输入的内容，并计算前四位”l”出现几次-并输出结果。" class="headerlink" title="获取用户输入的内容，并计算前四位”l”出现几次,并输出结果。"></a>获取用户输入的内容，并计算前四位”l”出现几次,并输出结果。</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">value = input(<span class="string">&quot;请输入内容：&quot;</span>)</span><br><span class="line">lenth = len(value)</span><br><span class="line">index = <span class="number">0</span></span><br><span class="line">count = <span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> index &lt; <span class="number">4</span>:</span><br><span class="line">    <span class="keyword">if</span> value[index] ==<span class="string">&#x27;l&#x27;</span>:</span><br><span class="line">        count += <span class="number">1</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">pass</span></span><br><span class="line">    <span class="keyword">if</span> index == lenth<span class="number">-1</span>:</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    index += <span class="number">1</span></span><br><span class="line">print(<span class="string">&quot;一共有%s个l&quot;</span>%(count,))</span><br></pre></td></tr></table></figure>
-
-<h5 id="获取用户两次输入的内容，并将所有的数据获取并进行相加"><a href="#获取用户两次输入的内容，并将所有的数据获取并进行相加" class="headerlink" title="获取用户两次输入的内容，并将所有的数据获取并进行相加"></a>获取用户两次输入的内容，并将所有的数据获取并进行相加</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">num1 = input(<span class="string">&quot;请输入：&quot;</span>)</span><br><span class="line">num2 = input(<span class="string">&quot;请输入：&quot;</span>)</span><br><span class="line">count = <span class="number">0</span></span><br><span class="line">new_num1 = <span class="string">&#x27;&#x27;</span></span><br><span class="line"><span class="keyword">while</span> count &lt; len(num1):</span><br><span class="line">    s1 = num1[count]</span><br><span class="line">    <span class="keyword">if</span> s1.isdigit():</span><br><span class="line">        new_num1 += s1</span><br><span class="line">    count += <span class="number">1</span></span><br><span class="line">n1 = int(new_num1)</span><br><span class="line">count = <span class="number">0</span></span><br><span class="line">new_num2 = <span class="string">&#x27;&#x27;</span></span><br><span class="line"><span class="keyword">while</span> count &lt; len(num2):</span><br><span class="line">    s2 = num2[count]</span><br><span class="line">    <span class="keyword">if</span> s2.isdigit():</span><br><span class="line">        new_num2 += s2</span><br><span class="line">    count += <span class="number">1</span></span><br><span class="line">n2 = int(new_num2)</span><br><span class="line">print(n1 + n2)</span><br></pre></td></tr></table></figure>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
   
 
 
